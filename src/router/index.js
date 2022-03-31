@@ -37,5 +37,13 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "login" */ '../views/sample-page/1.vue')
     },
+    {
+      path: '/sample-page/2',
+      name: 'SamplePage2',
+      // route level code-splitting
+      // this generates a separate chunk (login.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "login" */ '../views/sample-page/2.vue')
+    },
   ]
 })
